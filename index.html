@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">M!keIT</a>
+        <div class="menu">
+           <div class="btn">
+               <i class="fas fa-times close-btn"></i>
+           </div>
+           <a href="#">Home</a>
+           <a href="#">About</a>
+           <a href="#">Project</a>
+           <a href="#">Contact</a>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    <section class="section-main">
+        <h1>Hi!, M!keIT is here!</h1>
+    </section>
+    <div class="about_container">
+        <div class="about_contents">
+            <!-- image section -->
+          <section class="imageSection img-fluid">
+              <img src="img/IMG_1305_1.jpg">
+          </section>
+          <!-- end -->
+          <!-- info -->
+          <section class="infoSection">
+               <h1>About Me</h1>
+               <h4>Front-End Web Developer</h4>
+               <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                 voluptatem sequi nesciunt.</p>
+                 <div class="personal_info">
+                    <div><span>Name:</span><span>Michael Vincent Abao</span></div>
+                    <div><span>Age:</span><span>22 years old</span></div>
+                    <div><span>Email:</span><span>enthudia0814@gmail.com</span></div>
+                    <div><span>Address:</span><span>Zambales, Philippines</span></div>
+                </div>
+                    <div class="button">
+                        <button>Download CV</button>
+                    </div>
+          </section>
+          <!--skills section  -->
+          <section class="skillSection">
+             <div class="skill">
+                <div class="subject">HTML/CSS</div>
+                <div class="progress_bar">
+                    <div class="progress_line" value="60%" style="max-width: 60%"></div>
+                </div>
+             </div>
+             <div class="skill">
+                <div class="subject">JavaScript</div>
+                <div class="progress_bar">
+                    <div class="progress_line" value="45%" style="max-width: 45%"></div>
+                </div>
+             </div>
+             <div class="skill">
+                <div class="subject">Web Designing</div>
+                <div class="progress_bar">
+                    <div class="progress_line" value="65%" style="max-width: 55%"></div>
+                </div>
+             </div>
+             <div class="skill">
+                <div class="subject">Web Development</div>
+                <div class="progress_bar">
+                    <div class="progress_line" value="65%" style="max-width: 65%"></div>
+                </div>
+             </div>
+          </section>
+          <!-- skill end -->
+        </div>
+    </div>
+
+  <script type="text/javascript">
+    // javascript for the navigation//
+    window.addEventListener("scroll",function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('sticky',window.scrollY > 0);  
+    });
+    
+    // javascript for the sidebar//
+     var menu = document.querySelector('.menu');
+     var menuBtn = document.querySelector('.menu-btn');
+     var closeBtn = document.querySelector('.close-btn');
+
+     menuBtn.addEventListener("click", () => {
+       menu.classList.add('active');
+     });
+     closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+     });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
